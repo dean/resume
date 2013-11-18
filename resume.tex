@@ -1,0 +1,83 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\setlength{\textwidth}{5.1in} % set width of text portion
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf Dean Johnson}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+ \moveleft.5\hoffset\centerline{318 NW 12th St}
+ \moveleft.5\hoffset\centerline{Corvallis, OR 97330}
+ \moveleft.5\hoffset\centerline{(503) 470-9217}
+ \moveleft.5\hoffset\centerline{Github: github.com/johnsdea}
+
+
+\begin{resume}
+ 
+\section{EDUCATION} B.S. Computer Science, Oregon State University - Expected 2015
+                    \begin{itemize}  \itemsep -2pt %reduce space between items
+                     \item GPA: 3.11 
+                    \end{itemize}
+
+\section{SKILLS} {\sl Languages:} 
+                    \begin{itemize}  \itemsep -2pt %reduce space between items
+                     \item Proficient: Python 
+                     \item Familiar: Java, C++, C, {Html}, Javascript
+                    \end{itemize}
+                {\sl Frameworks \& Libraries: } 
+                    \begin{itemize}  \itemsep -2pt %reduce space between items
+                    \item Flask, Django, Selenium, Celery, SQLAlchemy
+                    \end{itemize}
+                {\sl Other: }
+                    \begin{itemize}  \itemsep -2pt %reduce space between items
+                    \item Unix, Git, Vagrant
+                    \end{itemize}
+ 
+\section{EXPERIENCE} 
+                \textbf{Student Developer} \hfill June 2012 - Present \\
+                OSU Open Source Lab, Corvallis OR \\
+                {\sl ORVSD Central} 
+                \begin{itemize}  \itemsep -2pt %reduce space between items
+                    \item A Flask application for managing Moodle sites, and doing remote course installations.
+                          Database interaction is handled via SQLAlchemy, course installations are done asynchronously 
+                          with celery.
+                    \item Project manager and lead developer.
+                \end{itemize}
+                \textbf{Introduction to Programming T.A.}  \hfill January 2013 - Present  \\
+                Oregon State University, Corvallis OR
+                \begin{itemize}  \itemsep -2pt %reduce space between items
+                \item Helped design pieces of the curriculum for incoming Computer Science students.
+                \item Lead labs and answered questions for students.
+                \item Graded student assignments based on correctness and completeness.
+                \end{itemize} 
+                \textbf {Intel Open Source Company} \hfill September 2011 - June 2012 \\
+                Oregon State University, Corvallis OR 
+                   \begin{itemize} \itemsep -2pt
+                    \item Project manager for group focused on genetic algorithm applied toward structural design.
+                    \end{itemize} 
+  
+\section{PERSONAL PROJECTS \&\\ AWARDS}
+            Flatter Me Please ({\sl flattermeplease.com})
+            \begin{itemize} \itemsep -2pt
+                \item A web application for brightening someone else's day through
+                    personalized compliments.
+                \item Award from OSU Application Hackathon for "Largest (Potential) User Base."
+                \item github.com/johnsdea/flatterer
+            \end{itemize}
+            Textbook Exchange ({\sl txtbookexchange.com})
+            \begin{itemize} \itemsep -2pt
+                \item A web application to help college students buy/sell textbooks locally.
+                    I had trouble finding books using the Facebook groups at Oregon State, 
+                    so I wrote the app to help students running into the same issues. The app is
+                    written using Flask, and utilizes an API for book information autocompletion.
+                \item github.com/johnsdea/txtbookexchange
+            \end{itemize}
+
+\end{resume}
+\end{document}
